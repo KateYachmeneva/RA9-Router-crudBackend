@@ -15,8 +15,6 @@ let posts = [
     {id:nextId++, content: 'Исполизование возможностей библиотеки React'},
     {id:nextId++, content: 'Bootstrap -современный css'},
 ];
-let nextId = 1;
-
 const router = new Router();
 
 router.get('/posts', async (ctx, next) => {
