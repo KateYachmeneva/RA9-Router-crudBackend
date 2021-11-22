@@ -9,7 +9,12 @@ const app = new Koa();
 app.use(cors());
 app.use(koaBody({json: true}));
 
-let posts = [];
+let nextId = 1;
+let posts = [
+    {id:nextId ++ ,content: 'React - современная библиотека '},
+    {id:nextId++, content: 'Исполизование возможностей библиотеки React'},
+    {id:nextId++, content: 'Bootstrap -современный css'},
+];
 let nextId = 1;
 
 const router = new Router();
